@@ -8,8 +8,8 @@
   },
   "scripts": {
     "test": "tap \"test/**/*.test.js\"",
-    "start": "fastify start -l info app.js",
-    "dev": "fastify start -w -l info -P app.js"
+    "start": "FASTIFY_ADDRESS=0.0.0.0 fastify start -l info app.js",
+    "dev": "FASTIFY_ADDRESS=0.0.0.0 fastify start -w -l info -P app.js"
   },
   "repository": {
     "type": "git",
