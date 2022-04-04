@@ -33,7 +33,7 @@ module.exports = {
   },
   chkAuthorizationHeaders: async (id) => {
     //Authorization 헤더를 위한 임시 함수
-    let result = ''
+    let result = 'aaaaaaaaaaaa'
     if(id === 'aa') result = '624710f7455711f57f2e98e0'
   
     return result

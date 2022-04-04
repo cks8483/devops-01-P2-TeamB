@@ -4,8 +4,9 @@ const { readOne, updateOne, chkAuthorizationHeaders } = require('../../../model/
 
 module.exports = async function (app, opts){
     app.patch('/', async function (request, reply){
-        let tmpId = await chkAuthorizationHeaders(request.headers.authorization)
-        if(!tmpId) tmpId = 'aa'
+        let tmpId = 'aa'
+        if(request.headers.authorization) tmpId = await chkAuthorizationHeaders(request.headers.authorization)
+
         const result = await updateOne(this.mongo, tmpId, request.body)
         const newRes = await readOne(this.mongo, tmpId)
 
