@@ -16,7 +16,7 @@ module.exports = async function (app, opts){
             reply
                 .code(200)
                 .header('content-type', 'application/json')
-                .send(result[0])
+                .send(result[2])
         }
     })
 }
