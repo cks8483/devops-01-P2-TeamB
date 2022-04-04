@@ -10,7 +10,7 @@ module.exports = {
   readAll: async (mongo) => {
     //User가 선택한 모든 항목 조회
     const collection = mongo.db.collection('restaurants')
-    const result = await collection.find({}).toArray()
+    const result = await collection.find().toArray()
 
     return result
   },
