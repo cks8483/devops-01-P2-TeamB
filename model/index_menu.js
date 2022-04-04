@@ -1,6 +1,13 @@
 const { ObjectId } = require('fastify-mongodb')
 
 module.exports = {
+  readOne: async (mongo, id) => {
+    const collection = mongo.db.collection('menu')
+    const result = await collection.findOne({
+      _id: ObjectId(id)
+    })
+    return result
+  },
   createOne: async (mongo, body) => {
     const collection = mongo.db.collection('menu')
 
