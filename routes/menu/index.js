@@ -37,11 +37,11 @@ module.exports = async function (fastify, opts) {
     //메뉴 삭제(delete/:id)
         fastify.delete('/:_id', async function(request, reply){
         const deleteresult = await deleteOne(this.mongo, request.params.id)
-        console.log("result : ", deleteresult)
+        console.log("result : ", deleteresult.ok)
         reply
             .code(204)
             .header('Content-Type', 'application/json; charset=utf-8')
-            
+            .send(deleteresult.ok)
         }
       )
   
