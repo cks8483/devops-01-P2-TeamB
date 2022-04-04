@@ -1,6 +1,6 @@
 'use strict'
 
-const { readAll } = require('../../model/index_restaurant.js')
+const { readAll } = require('../../../model/index_restaurant.js')
 
 module.exports = async function (app, opts){
     app.get('/', async function (request, reply){
