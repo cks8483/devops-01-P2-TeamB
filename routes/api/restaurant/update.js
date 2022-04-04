@@ -4,7 +4,7 @@ const { readOne, updateOne, chkAuthorizationHeaders } = require('../../../model/
 
 module.exports = async function (app, opts){
     app.patch('/', async function (request, reply){
-        let tmpId = '624710f7455711f57f2e98e0'
+        let tmpId = '624b7fad532f4695fe317913'
 
         const result = await updateOne(this.mongo, tmpId, request.body)
         const newRes = await readOne(this.mongo, tmpId)

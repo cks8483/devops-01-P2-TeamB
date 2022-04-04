@@ -22,7 +22,7 @@ module.exports = {
     const result = await collection.findOneAndUpdate({
       _id: ObjectId(id)
     }, {
-      $set: { "deliveryInfo.status" : body.status}
+      $set: { "deliveryInfo.status" : body.status }
     })
     return result
   },
