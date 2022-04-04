@@ -20,6 +20,6 @@ module.exports = async function (app, opts){
               .send(newRes)
           }
 
-        }
+        } 
     )
 }
