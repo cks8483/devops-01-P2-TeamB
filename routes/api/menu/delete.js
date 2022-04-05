@@ -7,10 +7,8 @@ const { readOne } = require('../../../model/index_menu.js')
 module.exports = async function (app, opts) {
   app.delete('/:id', async function (request, reply) {
     const tmpId = '624b7fad532f4695fe317913'
-
     const getId = await readOne(this.mongo, tmpId, request.params.id)
-    request.body._id = ObjectId(getId.menu[0]._id)
-
+    
     const result = await deleteOne(this.mongo, tmpId, request.params.id)
 
     if(!result){
