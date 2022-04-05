@@ -43,10 +43,12 @@ module.exports = {
   deleteOne: async (mongo, resId, menuId) => {
     const collection = mongo.db.collection('restaurants')
 
-    const result = await collection.findOneAndDelete({
+    const result = await collection.findOneAndUpdate({
       _id: ObjectId(resId),
       'menu._id': ObjectId(menuId)
-    }, { projection : { 'menu.$' : 1 }} )
+    }, {
+      $unset: { "menu.$" : 1 }
+    })
     return result
   }
 }
