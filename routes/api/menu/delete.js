@@ -22,7 +22,7 @@ module.exports = async function (app, opts) {
         reply
         .code(204) //상태코드 보내는 메소드
         .header('content-type', 'application/json')
-        .send({ok : result.ok}) //데이터베이스에서 꺼내와야 함
+        .send({ok : "ok"}) //데이터베이스에서 꺼내와야 함
     }
   })
 }
