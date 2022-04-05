@@ -32,6 +32,28 @@ AWS의 CodePipeline을 통해 Push된 ECR 이미지를 CodeBuild로 ECS 배포�
 
 ![image](https://user-images.githubusercontent.com/38274684/161700717-f3e879ba-f229-4f07-92ad-1f2881a5eb09.png)
 
+## Preview
+
+#### 주문 관리
+
+![1](https://user-images.githubusercontent.com/38274684/161729999-ce1b247d-70d8-4b3a-ad74-d5a120fcbfa8.gif)
+
+#### 매장 이름, 주소 변경
+
+![2](https://user-images.githubusercontent.com/38274684/161730022-ac2dbbd5-5818-42b3-ba03-f16b782a37f9.gif)
+
+#### 메뉴 추가
+
+![3](https://user-images.githubusercontent.com/38274684/161730045-622787dd-afa2-49f8-827e-59bbfd075d42.gif)
+
+#### 메뉴 변경
+
+![4](https://user-images.githubusercontent.com/38274684/161730059-6aea107b-222b-4f40-aee4-f61c4c9e8212.gif)
+
+#### 메뉴 삭제
+
+![5](https://user-images.githubusercontent.com/38274684/161730106-2d528187-3016-4f64-b11e-b13207cbd12d.gif)
+
 ## Available Scripts
 
 In the project directory, you can run:
